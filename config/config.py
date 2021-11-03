@@ -1,6 +1,8 @@
-BOT_TOKEN: str = ""
-SPOTIFY_ID: str = ""
-SPOTIFY_SECRET: str = ""
+import os
+
+BOT_TOKEN: str = os.getenv('TOKEN')
+SPOTIFY_ID: str = os.getenv('SPOTIFY_ID')
+SPOTIFY_SECRET: str = os.getenv('SPOTIFY_SECRET')
 
 BOT_PREFIX = "$"
 
